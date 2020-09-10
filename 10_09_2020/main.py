@@ -4,11 +4,11 @@ import pandas as pd
 
 
 def read_csv(file):
-    data = pd.read_csv(file, usecols=['gender', 'age'])
+    data = pd.read_csv(file, usecols=['Sex', 'Age'])
     return data
 
 
 if __name__ == '__main__':
     data = read_csv(open('data.csv'))
-    print(data['gender'])
-    print(data['age'])
+    print(data['Sex'])
+    print(data['Age'])
