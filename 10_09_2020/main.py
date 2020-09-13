@@ -60,9 +60,47 @@ def plot_died_vs_survived_wrt_sex(data):
     plt.show()
 
 
+def plot_family_aboard_survival(data):
+    # prepare data
+    sibsp_survival = data[['Survived', 'SibSp']].groupby('SibSp').mean()
+    parch_survival = data[['Survived', 'Parch']].groupby('Parch').mean()
+
+    family_data = data[['Survived', 'SibSp', 'Parch']]
+    family_data.insert(0, 'Family', data['SibSp'] + data['Parch'])
+    family_survival = family_data \
+        .drop('SibSp', 1).drop('Parch', 1) \
+        .groupby('Family').mean()
+
+    # configure plot
+    data_to_plot = [
+        (sibsp_survival, "Number of siblings and spouses aboard"),
+        (parch_survival, "Number of parents and children aboard"),
+        (family_survival, "Number of family members aboard"),
+    ]
+    number_of_plots = len(data_to_plot)
+    ticks_y = np.linspace(0, 1, 5)
+    for i in range(number_of_plots):
+        axes = plt.subplot2grid((number_of_plots, 1), (i, 0))
+        x = data_to_plot[i][0].index
+        y = data_to_plot[i][0]
+        axes.plot(x, y)
+        # configure plot
+        axes.set_xticks(x.values)
+        axes.set_yticks(ticks_y)
+        axes.set_xlabel(data_to_plot[i][1])
+        axes.set_ylabel("Survival")
+    # save pot to file
+    plt.tight_layout()
+    plt.savefig('./plot/family_aboard_survival.jpg')
+    # show plot
+    plt.show()
+
+
 if __name__ == '__main__':
     data = read_data(open('titanic.csv'))
     # how many people died/survived
     plot_died_vs_survived(data)
     # how many people died/survived wrt sex
     plot_died_vs_survived_wrt_sex(data)
+    # relation between number family members to survival
+    plot_family_aboard_survival(data)
