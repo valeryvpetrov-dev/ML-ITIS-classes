@@ -97,7 +97,7 @@ def plot_family_aboard_survival(data):
 
 
 if __name__ == '__main__':
-    data = read_data(open('titanic.csv'))
+    data = read_data(open('./titanic.csv'))
     # how many people died/survived
     plot_died_vs_survived(data)
     # how many people died/survived wrt sex
