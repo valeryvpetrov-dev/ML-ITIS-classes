@@ -1,0 +1,141 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:class\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </select>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"80f80159-03ca-4e12-a4ec-e8637601e33b\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitRewordedCommitMessages\">\n    <option name=\"onto\" value=\"2206d998dc03d25e00f4bf054a97a0f0815d5f27\" />\n  </component>\n  <component name=\"JupyterTrust\" id=\"caada2cd-22f0-4407-9738-2f605e318181\" />\n  <component name=\"ProjectId\" id=\"1hJYSZRv0QLZgyrrz6LEOBI1DIw\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"ToolWindowDebug.ShowToolbar\" value=\"false\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"PyConsoleConfigurable.Python Console\" />\n  </component>\n  <component name=\"PyConsoleOptionsProvider\">\n    <option name=\"myPythonConsoleState\">\n      <console-settings module-name=\"ML-ITIS-classes\" is-module-sdk=\"true\">\n        <option name=\"myUseModuleSdk\" value=\"true\" />\n        <option name=\"myModuleName\" value=\"ML-ITIS-classes\" />\n      </console-settings>\n    </option>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"10_09_2020\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"ML-ITIS-classes\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/10_09_2020/main.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"true\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration default=\"true\" type=\"PythonConfigurationType\" factoryName=\"Python\">\n      <module name=\"ML-ITIS-classes\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"true\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python.10_09_2020\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"80f80159-03ca-4e12-a4ec-e8637601e33b\" name=\"Default Changelist\" comment=\"\" />\n      <created>1599730662299</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1599730662299</updated>\n      <workItem from=\"1599730663352\" duration=\"2144000\" />\n      <workItem from=\"1599831307681\" duration=\"76000\" />\n      <workItem from=\"1599983704761\" duration=\"16047000\" />\n      <workItem from=\"1600327644551\" duration=\"718000\" />\n      <workItem from=\"1600333325381\" duration=\"423000\" />\n      <workItem from=\"1600333799316\" duration=\"56000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Plot died vs survived\">\n      <created>1599986836278</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1599986836278</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Plot died vs survived wrt set\">\n      <created>1599995699706</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1599995699706</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Plot died vs survived wrt set\">\n      <created>1599996591311</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1599996591311</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Plot relation btw number of family members aboard to survival\">\n      <created>1600002967367</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1600002967367</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Plot relation btw number of family members aboard to survival\">\n      <created>1600003114226</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1600003114226</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Change PyCharm project directory\">\n      <created>1600333714313</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1600333714313</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"7\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Plot died vs survived\" />\n    <MESSAGE value=\"Plot died vs survived wrt sex\" />\n    <MESSAGE value=\"Plot relation btw number of family members aboard to survival\" />\n    <MESSAGE value=\"Change PyCharm project directory\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Change PyCharm project directory\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"300\" y=\"150\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1600333854302\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"300\" y=\"150\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.944@0.23.1680.944\" timestamp=\"1600333854302\" />\n    <state x=\"512\" y=\"190\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog\" timestamp=\"1600333466784\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"512\" y=\"190\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.944@0.23.1680.944\" timestamp=\"1600333466784\" />\n    <state x=\"976\" y=\"62\" key=\"#xdebugger.evaluate\" timestamp=\"1599997842269\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"976\" y=\"62\" key=\"#xdebugger.evaluate/0.23.1680.944@0.23.1680.944\" timestamp=\"1599997842269\" />\n    <state x=\"100\" y=\"123\" width=\"1480\" height=\"744\" key=\"DiffContextDialog\" timestamp=\"1600002924879\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"100\" y=\"123\" width=\"1480\" height=\"744\" key=\"DiffContextDialog/0.23.1680.944@0.23.1680.944\" timestamp=\"1600002924879\" />\n    <state x=\"215\" y=\"110\" key=\"Git.Interactive.Rebase.Dialog\" timestamp=\"1599996649718\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"215\" y=\"110\" key=\"Git.Interactive.Rebase.Dialog/0.23.1680.944@0.23.1680.944\" timestamp=\"1599996649718\" />\n    <state x=\"624\" y=\"388\" key=\"Git.Rebase.Log.Action.NewCommitMessage.Dialog\" timestamp=\"1599996687186\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"624\" y=\"388\" key=\"Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.23.1680.944@0.23.1680.944\" timestamp=\"1599996687186\" />\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1600003199910\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.0.bottom/0.23.1680.944@0.23.1680.944\" timestamp=\"1600003199910\" />\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.0.center\" timestamp=\"1600003199910\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.0.center/0.23.1680.944@0.23.1680.944\" timestamp=\"1600003199910\" />\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.0.left\" timestamp=\"1600003199910\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.0.left/0.23.1680.944@0.23.1680.944\" timestamp=\"1600003199910\" />\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.0.right\" timestamp=\"1600003199910\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.0.right/0.23.1680.944@0.23.1680.944\" timestamp=\"1600003199910\" />\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1600003199911\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.1.bottom/0.23.1680.944@0.23.1680.944\" timestamp=\"1600003199911\" />\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.1.center\" timestamp=\"1600003199910\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.1.center/0.23.1680.944@0.23.1680.944\" timestamp=\"1600003199910\" />\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.1.left\" timestamp=\"1600003199910\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.1.left/0.23.1680.944@0.23.1680.944\" timestamp=\"1600003199910\" />\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.1.right\" timestamp=\"1600003199911\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state width=\"1628\" height=\"756\" key=\"GridCell.Tab.1.right/0.23.1680.944@0.23.1680.944\" timestamp=\"1600003199911\" />\n    <state x=\"168\" y=\"107\" key=\"MergeDialog\" timestamp=\"1600333772617\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"168\" y=\"107\" key=\"MergeDialog/0.23.1680.944@0.23.1680.944\" timestamp=\"1600333772617\" />\n    <state x=\"389\" y=\"207\" key=\"MultipleFileMergeDialog\" timestamp=\"1600333772651\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"389\" y=\"207\" key=\"MultipleFileMergeDialog/0.23.1680.944@0.23.1680.944\" timestamp=\"1600333772651\" />\n    <state x=\"217\" y=\"46\" key=\"SettingsEditor\" timestamp=\"1600333827751\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"217\" y=\"46\" key=\"SettingsEditor/0.23.1680.944@0.23.1680.944\" timestamp=\"1600333827751\" />\n    <state x=\"340\" y=\"172\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1600333728974\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"340\" y=\"172\" key=\"Vcs.Push.Dialog.v2/0.23.1680.944@0.23.1680.944\" timestamp=\"1600333728974\" />\n    <state x=\"592\" y=\"399\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1599731167940\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"592\" y=\"399\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.944@0.23.1680.944\" timestamp=\"1599731167940\" />\n    <state x=\"0\" y=\"23\" width=\"1680\" height=\"944\" key=\"editAsTableFormatDialogDimension\" timestamp=\"1599983957112\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"0\" y=\"23\" width=\"1680\" height=\"944\" key=\"editAsTableFormatDialogDimension/0.23.1680.944@0.23.1680.944\" timestamp=\"1599983957112\" />\n    <state x=\"421\" y=\"23\" width=\"838\" height=\"1032\" key=\"search.everywhere.popup\" timestamp=\"1600333823900\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"944\" />\n    </state>\n    <state x=\"421\" y=\"23\" width=\"838\" height=\"1032\" key=\"search.everywhere.popup/0.23.1680.944@0.23.1680.944\" timestamp=\"1600333823900\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/ML_ITIS_classes$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1600002842342\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/10_09_2020\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 2b045085a7f697b39afbf6f9cfaa66d796d9a94f)
++++ .idea/workspace.xml	(date 1600334051194)
+@@ -33,7 +33,14 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="80f80159-03ca-4e12-a4ec-e8637601e33b" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/ML-ITIS-classes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML-ITIS-classes.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/10_09_2020/.idea/.gitignore" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/10_09_2020/.idea/10_09_2020.iml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/10_09_2020/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/10_09_2020/.idea/misc.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/10_09_2020/.idea/modules.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/10_09_2020/.idea/vcs.xml" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -72,7 +79,7 @@
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
+     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
++    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+   </component>
+   <component name="PyConsoleOptionsProvider">
+     <option name="myPythonConsoleState">
+@@ -87,9 +94,6 @@
+       <module name="ML-ITIS-classes" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+       <option name="IS_MODULE_SDK" value="true" />
+@@ -146,7 +150,7 @@
+       <workItem from="1599983704761" duration="16047000" />
+       <workItem from="1600327644551" duration="718000" />
+       <workItem from="1600333325381" duration="423000" />
+-      <workItem from="1600333799316" duration="56000" />
++      <workItem from="1600333799316" duration="242000" />
+     </task>
+     <task id="LOCAL-00001" summary="Plot died vs survived">
+       <created>1599986836278</created>
+@@ -190,7 +194,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1600333714313</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <task id="LOCAL-00007" summary="Migrate to new project structure">
++      <created>1600333938006</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1600333938007</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -213,7 +224,8 @@
+     <MESSAGE value="Plot died vs survived wrt sex" />
+     <MESSAGE value="Plot relation btw number of family members aboard to survival" />
+     <MESSAGE value="Change PyCharm project directory" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Change PyCharm project directory" />
++    <MESSAGE value="Migrate to new project structure" />
++    <option name="LAST_COMMIT_MESSAGE" value="Migrate to new project structure" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="300" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600333854302">
+@@ -280,14 +292,14 @@
+       <screen x="0" y="23" width="1680" height="944" />
+     </state>
+     <state x="389" y="207" key="MultipleFileMergeDialog/0.23.1680.944@0.23.1680.944" timestamp="1600333772651" />
+-    <state x="217" y="46" key="SettingsEditor" timestamp="1600333827751">
++    <state x="217" y="46" key="SettingsEditor" timestamp="1600334050826">
+       <screen x="0" y="23" width="1680" height="944" />
+     </state>
+-    <state x="217" y="46" key="SettingsEditor/0.23.1680.944@0.23.1680.944" timestamp="1600333827751" />
+-    <state x="340" y="172" key="Vcs.Push.Dialog.v2" timestamp="1600333728974">
++    <state x="217" y="46" key="SettingsEditor/0.23.1680.944@0.23.1680.944" timestamp="1600334050826" />
++    <state x="340" y="172" key="Vcs.Push.Dialog.v2" timestamp="1600333945499">
+       <screen x="0" y="23" width="1680" height="944" />
+     </state>
+-    <state x="340" y="172" key="Vcs.Push.Dialog.v2/0.23.1680.944@0.23.1680.944" timestamp="1600333728974" />
++    <state x="340" y="172" key="Vcs.Push.Dialog.v2/0.23.1680.944@0.23.1680.944" timestamp="1600333945499" />
+     <state x="592" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599731167940">
+       <screen x="0" y="23" width="1680" height="944" />
+     </state>
+@@ -296,10 +308,10 @@
+       <screen x="0" y="23" width="1680" height="944" />
+     </state>
+     <state x="0" y="23" width="1680" height="944" key="editAsTableFormatDialogDimension/0.23.1680.944@0.23.1680.944" timestamp="1599983957112" />
+-    <state x="421" y="23" width="838" height="1032" key="search.everywhere.popup" timestamp="1600333823900">
++    <state x="421" y="23" width="838" height="1032" key="search.everywhere.popup" timestamp="1600334038305">
+       <screen x="0" y="23" width="1680" height="944" />
+     </state>
+-    <state x="421" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1680.944@0.23.1680.944" timestamp="1600333823900" />
++    <state x="421" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1680.944@0.23.1680.944" timestamp="1600334038305" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/ML_ITIS_classes$main.coverage" NAME="main Coverage Results" MODIFIED="1600002842342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/10_09_2020" />
+Index: .idea/ML-ITIS-classes.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\">\n      <excludeFolder url=\"file://$MODULE_DIR$/10_09_2020/venv\" />\n    </content>\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.7 (ML-ITIS-classes)\" jdkType=\"Python SDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n  <component name=\"PyDocumentationSettings\">\n    <option name=\"format\" value=\"PLAIN\" />\n    <option name=\"myDocStringFormat\" value=\"Plain\" />\n  </component>\n  <component name=\"TemplatesService\">\n    <option name=\"TEMPLATE_FOLDERS\">\n      <list>\n        <option value=\"$MODULE_DIR$/10_09_2020/venv/lib/python3.7/site-packages/pandas/io/formats/templates\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"TestRunnerService\">\n    <option name=\"PROJECT_TEST_RUNNER\" value=\"pytest\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/ML-ITIS-classes.iml	(revision 2b045085a7f697b39afbf6f9cfaa66d796d9a94f)
++++ .idea/ML-ITIS-classes.iml	(date 1600334050022)
+@@ -3,6 +3,7 @@
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/10_09_2020/venv" />
++      <excludeFolder url="file://$MODULE_DIR$/venv" />
+     </content>
+     <orderEntry type="jdk" jdkName="Python 3.7 (ML-ITIS-classes)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+@@ -10,13 +11,6 @@
+   <component name="PyDocumentationSettings">
+     <option name="format" value="PLAIN" />
+     <option name="myDocStringFormat" value="Plain" />
+-  </component>
+-  <component name="TemplatesService">
+-    <option name="TEMPLATE_FOLDERS">
+-      <list>
+-        <option value="$MODULE_DIR$/10_09_2020/venv/lib/python3.7/site-packages/pandas/io/formats/templates" />
+-      </list>
+-    </option>
+   </component>
+   <component name="TestRunnerService">
+     <option name="PROJECT_TEST_RUNNER" value="pytest" />
