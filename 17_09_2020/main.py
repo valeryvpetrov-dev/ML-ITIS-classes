@@ -1,2 +1,5 @@
+import pandas as pd
+
 if __name__ == '__main__':
-    print('17_09_2020')
+    data = pd.read_csv('./sunspots.csv')
+    print(data)
