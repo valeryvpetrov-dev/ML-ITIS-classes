@@ -12,6 +12,7 @@ if __name__ == '__main__':
     for i in range(1, len(date)):
         emission_new.append(alpha*emission[i] + (1 - alpha)*emission_new[i - 1])
     plt.figure(figsize=[30, 10])
+    plt.xticks(rotation=90)
     plt.plot(date, emission_new, color='b')
     plt.scatter(date, emission_new, color='b')
     plt.scatter(date, emission, color='r')
