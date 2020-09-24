@@ -1,2 +1,7 @@
+import numpy as np
+
 if __name__ == '__main__':
-    print("Class 24.09.2020")
+    n, k = 100, 4
+    x = np.random.randint(1, 100, n)
+    y = np.random.randint(1, 100, n)
+    print(x)
