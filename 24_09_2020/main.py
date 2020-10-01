@@ -6,6 +6,25 @@ def dist(x1, y1, x2, y2):
     return np.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
 
+def cluster(k, x, y, x_cluster_center, y_cluster_center):
+    cluster = []
+    for i in range(0, len(x)):
+        min_dist = dist(x[i], y[i], x_cluster_center[0], y_cluster_center[0])
+        min_dist_cluster = 0
+        for j in range(1, k):
+            current_dist = dist(x[i], y[i], x_cluster_center[j], y_cluster_center[j])
+            if current_dist < min_dist:
+                min_dist_cluster = j
+        cluster.append(min_dist_cluster)
+    return cluster
+
+
+def recalculate_cluster_centers(k, x, y, x_cluster_centers, y_cluster_centers, clusters):
+    # TODO continue
+    for i in range(0, k):
+        pass
+
+
 if __name__ == '__main__':
     n, k = 100, 4
     x = np.random.randint(1, 100, n)
@@ -26,3 +45,4 @@ if __name__ == '__main__':
     plt.scatter(x, y)
     plt.scatter(x_cluster_center, y_cluster_center, color='r')
     plt.show()
+    cluster = cluster(k, x, y, x_cluster_center, y_cluster_center)
