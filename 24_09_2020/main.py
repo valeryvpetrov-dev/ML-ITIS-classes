@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+import glob
 
 
 def euclidean_dist(x1, y1, x2, y2):
@@ -23,12 +25,27 @@ def assign_points_to_clusters(x_points, y_points, x_cluster_centers, y_cluster_c
 
 
 def recalculate_cluster_centers(x_points, y_points, clusters_number, points_to_clusters):
-    # TODO continue
-    for i in range(0, clusters_number):
-        pass
+    x_clusters = [[] for i in range(clusters_number)]
+    y_clusters = [[] for i in range(clusters_number)]
+    for i in range(0, len(points_to_clusters)):
+        cluster = points_to_clusters[i]
+        x_clusters[cluster].append(x_points[i])
+        y_clusters[cluster].append(y_points[i])
+
+    x_cluster_centers = []
+    y_cluster_centers = []
+    for i in range(clusters_number):
+        x_cluster_centers.append(np.mean(x_clusters[i]))
+        y_cluster_centers.append(np.mean(y_clusters[i]))
+    return x_cluster_centers, y_cluster_centers
 
 
 if __name__ == '__main__':
+    # remove k means steps figures
+    files = glob.glob('./k_means_steps/*')
+    for f in files:
+        os.remove(f)
+
     points_number, clusters_number = 100, 4
     # generate input points
     x_points = np.random.randint(1, 100, points_number)
@@ -55,20 +72,39 @@ if __name__ == '__main__':
         x_cluster_centers.append(x_cluster_center)
         y_cluster_centers.append(y_cluster_center)
 
-    # plot cluster centers
-    clusters_colors = plt.cm.get_cmap('hsv', clusters_number + 1)
-    for i in range(0, clusters_number):
-        plt.scatter(x_cluster_centers[i], y_cluster_centers[i], color=clusters_colors(i), marker='*', s=200)
+    # cluster until new centers are not stand still
+    clustering_step = 1
+    clusters_centers_moved = True
+    while clusters_centers_moved:
+        print("Clustering step: {}".format(clustering_step))
+        plt.figure(clustering_step)
+        # plot cluster centers
+        clusters_colors = plt.cm.get_cmap('hsv', clusters_number + 1)
+        for i in range(0, clusters_number):
+            plt.scatter(x_cluster_centers[i], y_cluster_centers[i], color=clusters_colors(i), marker='*', s=200)
 
-    # assign each point to cluster
-    points_to_clusters = assign_points_to_clusters(x_points, y_points, x_cluster_centers, y_cluster_centers)
-    # plot current clusterization
-    for i in range(0, points_number):
-        current_point_x = x_points[i]
-        current_point_y = y_points[i]
-        current_point_cluster = points_to_clusters[i]
-        plt.scatter(current_point_x, current_point_y, color=clusters_colors(current_point_cluster))
-    plt.show()
+        # assign each point to cluster
+        points_to_clusters = assign_points_to_clusters(x_points, y_points, x_cluster_centers, y_cluster_centers)
+        # plot current k_means_steps
+        for i in range(0, points_number):
+            current_point_x = x_points[i]
+            current_point_y = y_points[i]
+            current_point_cluster = points_to_clusters[i]
+            plt.scatter(current_point_x, current_point_y, color=clusters_colors(current_point_cluster))
 
-    # recalculate clusters centers
-    x_cluster_centers, y_cluster_centers = recalculate_cluster_centers(x_points, y_points, clusters_number, points_to_clusters)
+        # recalculate clusters centers
+        new_x_cluster_centers, new_y_cluster_centers = recalculate_cluster_centers(x_points, y_points, clusters_number, points_to_clusters)
+
+        # figure out if new clusters centers changed
+        clusters_centers_moved = False
+        for i in range(clusters_number):
+            clusters_centers_moved = clusters_centers_moved or \
+                                         x_cluster_centers[i] - new_x_cluster_centers[i] != 0 or \
+                                         y_cluster_centers[i] - new_y_cluster_centers[i] != 0
+        plt.savefig('./k_means_steps/k_means_step_{}.png'.format(clustering_step))
+        if clusters_centers_moved:
+            x_cluster_centers = new_x_cluster_centers
+            y_cluster_centers = new_y_cluster_centers
+            clustering_step = clustering_step + 1
+
+    print("K-means clustering done in {} steps".format(clustering_step))
