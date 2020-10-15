@@ -18,7 +18,7 @@ if __name__ == '__main__':
     n = 100
     x = np.random.randint(1, 100, n)
     y = np.random.randint(1, 100, n)
-    eps, min_neighbours = 10, 3
+    eps, min_neighbours = 10, 5
     flags = [Flag.UNKNOWN.value for i in range(n)]
 
     # assign green flags
@@ -42,25 +42,51 @@ if __name__ == '__main__':
         if flags[i] == Flag.UNKNOWN.value:
             flags[i] = Flag.RED.value
 
+    # plot flagged points
+    plt.figure(1)
+    for i in range(n):
+        color = None
+        if flags[i] == Flag.GREEN.value:
+            color = 'g'
+        elif flags[i] == Flag.YELLOW.value:
+            color = 'y'
+        elif flags[i] == Flag.RED.value:
+            color = 'r'
+        plt.scatter(x[i], y[i], color=color)
+
     # assign points to clusters
-    clusters = [0 for i in range(n)]
+    clusters = [-1 for i in range(n)]
     last_cluster_marker = 1
+    current_cluster_marker = last_cluster_marker
     for i in range(n):
         if flags[i] == Flag.GREEN.value:
-            if clusters[i] == 0:
+            # point is not assigned to cluster
+            if clusters[i] == -1:
                 clusters[i] = last_cluster_marker
                 last_cluster_marker += 1
+            current_cluster_marker = clusters[i]
             for j in range(n):
+                if i == j:
+                    continue
                 if euclidean_dist(x[i], y[i], x[j], y[j]) < eps:
-                    # TODO now it assign to last cluster
-                    clusters[j] = clusters[i]
+                    clusters[j] = current_cluster_marker
 
-    # TODO show unsigned points
+    # Assign yellow points to clusters
+    for i in range(n):
+        if flags[i] == Flag.YELLOW.value:
+            for j in range(n):
+                if i == j:
+                    continue
+                if euclidean_dist(x[i], y[i], x[j], y[j]) < eps and clusters[j] != -1:
+                    clusters[i] = clusters[j]
+
+    plt.figure(2)
     # plot clustered points
     for i in range(n):
-        cluster_color = clusters[i] / last_cluster_marker
-        if clusters[i] == Flag.UNKNOWN.value:
-            plt.scatter(x[i], y[i], color='black', marker='*')
+        if clusters[i] == -1:
+            plt.scatter(x[i], y[i], color='r', marker='*', s=60)
         else:
+            cluster_color = clusters[i] / last_cluster_marker
             plt.scatter(x[i], y[i], color=(cluster_color, 0.2, cluster_color ** 2))
+            plt.text(x[i], y[i], str(clusters[i]))
     plt.show()
