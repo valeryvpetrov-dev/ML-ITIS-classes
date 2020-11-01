@@ -19,7 +19,7 @@ def map_species(name):
 
 def read_iris_data(file):
     df = pd.read_csv(file)
-    df = df[['SepalLengthCm', 'SepalWidthCm', 'Species']]
+    df = df[['SepalLengthCm', 'SepalWidthCm', 'PetalWidthCm', 'Species']]
     df['Species'] = df['Species'].map(map_species)
     return df
 
@@ -28,11 +28,23 @@ def plot_knn(df_train, df_test_control, df_test_actual, K, accuracy):
     df_train = df_train.sort_values(by=['Species'])
     df_test_control = df_test_control.sort_values(by=['Species'])
     df_test_actual = df_test_actual.sort_values(by=['Species'])
-    ax1 = df_train.plot.scatter(x='SepalLengthCm', y='SepalWidthCm', c='Species', colormap='viridis', marker='o')
-    ax2 = df_test_control.plot.scatter(x='SepalLengthCm', y='SepalWidthCm', c='Species', colormap='viridis', marker=6,
-                                       s=70, colorbar=False, ax=ax1)
-    ax3 = df_test_actual.plot.scatter(x='SepalLengthCm', y='SepalWidthCm', c='Species', colormap='viridis', marker=7,
-                                      s=70, colorbar=False, ax=ax1)
+
+    plot3d = plt.figure().gca(projection='3d')
+    plot3d.scatter(
+        df_train['SepalLengthCm'], df_train['SepalWidthCm'], df_train['PetalWidthCm'],
+        c=df_train['Species'], marker='o'
+    )
+    plot3d.scatter(
+        df_test_control['SepalLengthCm'], df_test_control['SepalWidthCm'], df_test_control['PetalWidthCm'],
+        c=df_test_control['Species'], marker=6  # caretup
+    )
+    plot3d.scatter(
+        df_test_actual['SepalLengthCm'], df_test_actual['SepalWidthCm'], df_test_actual['PetalWidthCm'],
+        c=df_test_actual['Species'], marker=7  # caretdown
+    )
+    plot3d.set_xlabel('SepalLengthCm')
+    plot3d.set_ylabel('SepalWidthCm')
+    plot3d.set_zlabel('PetalWidthCm')
     plt.title("K={}, Accuracy={}".format(K, accuracy))
     plt.show()
 
@@ -43,7 +55,7 @@ def split_train_test(df, train_percent=0.8):
 
 
 def euclidean_dist(iris_1, iris_2):
-    return np.sqrt((iris_1[0] - iris_2[0]) ** 2 + (iris_1[1] - iris_2[1]) ** 2)
+    return np.sqrt((iris_1[0] - iris_2[0]) ** 2 + (iris_1[1] - iris_2[1]) ** 2 + (iris_1[2] - iris_2[2]) ** 2)
 
 
 def classify_knn(df_train, df_test, K):
