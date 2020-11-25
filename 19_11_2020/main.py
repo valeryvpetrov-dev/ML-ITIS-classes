@@ -1,7 +1,10 @@
 import os
+import sys
 import time
+from datetime import datetime
 
 import numpy as np
+import pygame
 import requests
 import tensorflow as tf
 from tensorflow import keras
@@ -11,6 +14,10 @@ from tensorflow.keras.optimizers import Adam
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+BLUE = (0, 0, 255)
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
 
 
 def configure_ssl():
@@ -97,6 +104,66 @@ def cnn_digits_predict(model, image_file):
     return result[0]
 
 
+def predict_digit(model, surface):
+    digit_image_path = './data/digit.png'
+    pygame.image.save(surface, digit_image_path)
+    digit_prediction = cnn_digits_predict(model, digit_image_path)
+    draw_digit_prediction(surface, digit_prediction)
+    os.remove(digit_image_path)
+
+
+def draw_digit_prediction(surface, digit_prediction):
+    font = pygame.font.SysFont(None, 30)
+    img = font.render('Prediction: {}'.format(digit_prediction), True, BLUE)
+    surface.blit(img, (5, 5))
+
+
+def clear_screen(screen):
+    screen.fill(WHITE)
+    pygame.display.flip()
+
+
+def save_current_picture(screen):
+    now_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    pygame.image.save(screen, './data/{}.png'.format(now_str))
+
+
+def start_predict_digit_game(cnn_predict_digit_model):
+    pygame.init()
+
+    drawing = False
+    screen = pygame.display.set_mode((200, 200), 0, 32)
+    screen.fill(WHITE)
+    pygame.display.set_caption("ScratchBoard")
+
+    last_pos = None
+
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            elif event.type == pygame.MOUSEMOTION:
+                if drawing:
+                    mouse_position = pygame.mouse.get_pos()
+                    if last_pos is not None:
+                        pygame.draw.line(screen, BLACK, last_pos, mouse_position, 10)
+                    last_pos = mouse_position
+            elif event.type == pygame.MOUSEBUTTONUP:
+                last_pos = None
+                drawing = False
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                drawing = True
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_RETURN:
+                    predict_digit(cnn_predict_digit_model, screen)
+                elif event.key == pygame.K_c:
+                    clear_screen(screen)
+                elif event.key == pygame.K_s:
+                    save_current_picture(screen)
+        pygame.display.update()
+
+
 if __name__ == '__main__':
     # create model
     # configure_ssl()
@@ -104,6 +171,6 @@ if __name__ == '__main__':
     # mnist_cnn_train(model)
     # model.save('./model/cnn_digits_28x28.h5')
 
-    # load and use trained model
+    # load trained model
     model = tf.keras.models.load_model('./model/cnn_digits_28x28.h5')
-    print(cnn_digits_predict(model, './data/digit_0.png'))
+    start_predict_digit_game(model)
