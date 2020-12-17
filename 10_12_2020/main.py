@@ -38,6 +38,7 @@ def detect_faces(img, img_gray):
 
 if __name__ == '__main__':
     img = take_camera_picture()
+    # img = cv2.imread('test.jpeg')
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     detect_faces(img, img_gray)
     if cv2.waitKey(0) == 27:  # close on ESC key
